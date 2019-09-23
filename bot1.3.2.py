@@ -831,6 +831,9 @@ async def ping(ctx):
 
 @bot.command(pass_context=True)
 async def format(ctx):
+	channel = False
+	staff_channel = False
+	
 	if ctx.message.channel.id == "528215464136933387":
 		channel = True
 	elif ctx.message.channel.id == "528265872008019969":
